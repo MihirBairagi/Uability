@@ -1,0 +1,22 @@
+/* mihir css  */
+
+ul.not-finished-listing li .img-box {
+    width: 45%;
+}
+ul.not-finished-listing {
+    margin-top: 10rem;
+}
+ul.not-finished-listing li .text-box {
+    width: 48%;
+    text-align: start;
+}
+ul.not-finished-listing li .text-box img {
+    width: 12rem;
+    height: 12rem;
+    object-fit: contain;
+    margin-bottom: 2rem;
+    background: #121212;
+    padding: 2rem;
+    border-radius: 100%;
+}
+
