@@ -1,28 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/main.css">
+    <title>UAbility</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
-<body>
 
-    <section class="">
-        <div class="container">
-            <div class="">
-                <p><a href="">home</a>><a href="">Programmes</a>> UAbility blue</p>
-                <h1>Quick guide to <strong>multi-crore</strong><br> profit simplified</h1>
-                <p>Step-by-step manual on how to achieve multiple crores in net <br>profit with your business fast with less complexity</p>
-                <video src=""></video>
-                <div class="">
-                    <a href="">Download Manual and FREE Resource</a>
-                    <a href="">Apply Now</a>
+<body>
+    <header>
+        <div class="header">
+            <button class="drawer-btn" aria-label="Open Drawer">
+                <svg width="29" height="18" viewBox="0 0 29 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M11.5547 1.28299C11.5547 0.807408 11.9402 0.421875 12.4158 0.421875H28.138C28.6136 0.421875 28.9991 0.807408 28.9991 1.28299C28.9991 1.75856 28.6136 2.1441 28.138 2.1441H12.4158C11.9402 2.1441 11.5547 1.75856 11.5547 1.28299Z"
+                        fill="white" />
+                    <path
+                        d="M0 8.80252C0 8.32694 0.385532 7.94141 0.861111 7.94141H28.1389C28.6145 7.94141 29 8.32694 29 8.80252C29 9.2781 28.6145 9.66363 28.1389 9.66363H0.861111C0.385533 9.66363 0 9.2781 0 8.80252Z"
+                        fill="white" />
+                    <path
+                        d="M11.5547 16.3181C11.5547 15.8426 11.9402 15.457 12.4158 15.457H28.138C28.6136 15.457 28.9991 15.8426 28.9991 16.3181C28.9991 16.7937 28.6136 17.1793 28.138 17.1793H12.4158C11.9402 17.1793 11.5547 16.7937 11.5547 16.3181Z"
+                        fill="white" />
+                </svg>
+            </button>
+            <div class="logo"><a href="/"><img src="img/logo.png" alt=""></a></div>
+            <nav class="nav">
+                <div class="drawer">
+                    <button class="close-btn close_drawer" aria-label="Close Drawer">
+                        <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"
+                            aria-label="Close Drawer" role="img">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                            </path>
+                        </svg>
+                    </button>
+                    <ul class="nav-list flex">
+                        <li><a href="javascript:void(0)" class="close_drawer">Programmes</a></li>
+                        <li><a href="javascript:void(0)" class="close_drawer">Journey</a></li>
+                        <li><a href="javascript:void(0)" class="close_drawer">Reviews</a></li>
+                        <li><a href="javascript:void(0)" class="close_drawer">About Us</a></li>
+                        <li><a href="javascript:void(0)" class="close_drawer">Who is it for ?</a></li>
+                    </ul>
+                    <a href="javascript:void(0)" class="btn">Apply Now</a>
                 </div>
-                <div class=""></div>
+                <div class="blank close_drawer"></div>
+            </nav>
+        </div>
+    </header>
+    <script>
+        if ($(window).width() < 1200) {
+            // For Making Header Responsive
+            const drawer_btn = document.querySelector(".drawer-btn");
+            const nav = document.querySelector(".nav");
+            const body = document.body; // Get the body element
+
+            drawer_btn.addEventListener("click", e => {
+                nav.classList.add("blur");
+                body.classList.add("menu-active"); // Add class to body when menu is active
+            });
+
+            nav.addEventListener("click", e => {
+                if (e.target.closest('.close_drawer')) {
+                    nav.classList.remove('blur');
+                    body.classList.remove("menu-active"); // Remove class from body when menu is closed
+                }
+            });
+        }
+    </script>
+    <div class="hp-banner-section">
+        <div class="container">
+            <div class="flex-box">
+                <div class="heading-box center">
+                    <img src="img/tick.png" alt="">
+                    <h1>Unlock high<br> ticket <strong>growth</strong></h1>
+                        <p>End the Struggle and Escape the Low-Paying Trap Implement Proven Strategies to Attract High Paying Clients</p>
+                        <a href="javascript:void(0)" class="btn">Watch Free Training</a>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+    <div class="hp-video-section">
+        <video class="hp-video-box" preload="auto" autoplay="" playsinline="" muted="" loop="" width="100%" poster="img/video-poster.png">
+            <source src="" type="video/mp4">
+        </video>
+    </div>
 
     <section class="" >
         <div class="container">
