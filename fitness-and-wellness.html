@@ -3,142 +3,254 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Coaches Detail</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main-child.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.js"></script>
 </head>
 <body>
 
+    <header>
+        <div class="header">
+            <button class="drawer-btn" aria-label="Open Drawer">
+                <svg width="29" height="18" viewBox="0 0 29 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M11.5547 1.28299C11.5547 0.807408 11.9402 0.421875 12.4158 0.421875H28.138C28.6136 0.421875 28.9991 0.807408 28.9991 1.28299C28.9991 1.75856 28.6136 2.1441 28.138 2.1441H12.4158C11.9402 2.1441 11.5547 1.75856 11.5547 1.28299Z"
+                        fill="white" />
+                    <path
+                        d="M0 8.80252C0 8.32694 0.385532 7.94141 0.861111 7.94141H28.1389C28.6145 7.94141 29 8.32694 29 8.80252C29 9.2781 28.6145 9.66363 28.1389 9.66363H0.861111C0.385533 9.66363 0 9.2781 0 8.80252Z"
+                        fill="white" />
+                    <path
+                        d="M11.5547 16.3181C11.5547 15.8426 11.9402 15.457 12.4158 15.457H28.138C28.6136 15.457 28.9991 15.8426 28.9991 16.3181C28.9991 16.7937 28.6136 17.1793 28.138 17.1793H12.4158C11.9402 17.1793 11.5547 16.7937 11.5547 16.3181Z"
+                        fill="white" />
+                </svg>
+            </button>
+            <div class="logo"><a href="/"><img src="img/logo.png" alt=""></a></div>
+            <nav class="nav">
+                <div class="drawer">
+                    <button class="close-btn close_drawer" aria-label="Close Drawer">
+                        <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"
+                            aria-label="Close Drawer" role="img">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                            </path>
+                        </svg>
+                    </button>
+                    <ul class="nav-list flex">
+                        <li><a href="javascript:void(0)" class="close_drawer">Programmes</a></li>
+                        <li><a href="javascript:void(0)" class="close_drawer">Journey</a></li>
+                        <li><a href="javascript:void(0)" class="close_drawer">Reviews</a></li>
+                        <li><a href="javascript:void(0)" class="close_drawer">About Us</a></li>
+                        <li><a href="javascript:void(0)" class="close_drawer">Who is it for ?</a></li>
+                    </ul>
+                    <a href="javascript:void(0)" class="btn-arrow">Apply Now</a>
+                </div>
+                <div class="blank close_drawer"></div>
+            </nav>
+        </div>
+    </header>
 
-    <section>
+
+    <section class="fw-banner-section black-bg com-padding" >
         <div class="container">
-            <div class="">
-                <p><a href="">home</a>><a href="">Coaches</a>> Fitness and Wellness Coach</p>
-                <h1>Scale your fitness <strong>coaching business with UAbility’s</strong> high ticket consulting</h1>
-                <video src=""></video>
-                <p>Designed for fitness and wellness coaches aiming for high-paying clients</p>
-                <div class="">
-                    <a href="">Watch Free Training</a>
-                    <a href="">Schedule a meeting</a>
+            <div class="fw-banner-box center">
+                <ul class="breadcrumb-grp">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="javascript:void(0)">Coaches</a></li>
+                    <li>Fitness and Wellness Coach</li>
+                </ul>
+                <h1 class="h1 h1-line-h" >Scale your fitness <strong><i>coaching business with <br>UAbility’s</i></strong> high ticket consulting</h1>
+                <div class="video-box relative fw-banner-video">
+                    <button type="button" class="video__fullscreen-button"><svg class="video__fullscreen-icon"
+                        xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                        <polygon points="0 0 0 5 2 5 2 2 5 2 5 0 " />
+                        <polygon points="14 0 9 0 9 2 12 2 12 5 14 5 " />
+                        <polygon points="14 14 14 9 12 9 12 12 9 12 9 14 " />
+                        <polygon points="0 14 5 14 5 12 2 12 2 9 0 9 " />
+                    </svg>
+                </button>
+                    <button type="button" class="video__play-button" data-button-state="pause">
+                        <svg class="video__play-button-icon video__play-button-icon--play" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="41" cy="41" r="41" fill="#36B0FF"/>
+                            <path d="M37.5063 51.8722V28.7778C37.5063 28.0131 38.3914 27.5886 38.9878 28.0672L53.4707 39.6919C53.927 40.0582 53.9247 40.7535 53.466 41.1167L38.9831 52.5864C38.3858 53.0594 37.5063 52.6341 37.5063 51.8722Z" fill="white"/>
+                            </svg>
+                        <svg class="video__play-button-icon video__play-button-icon--pause"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140">
+                            <path fill-rule="evenodd" clip-rule="evenodd" fill="white"
+                                d="M70 140L70 140c-38.7 0-70-31.3-70-70v0C0 31.3 31.3 0 70 0h0c38.7 0 70 31.3 70 70v0C140 108.7 108.7 140 70 140z" />
+                            <rect fill-rule="evenodd" clip-rule="evenodd" x="56" y="50.8" class="st1" width="8.8"
+                                height="38.5" />
+                            <rect fill-rule="evenodd" clip-rule="evenodd" x="75.2" y="50.8" class="st1" width="8.8"
+                                height="38.5" />
+                        </svg>
+                    </button>
+                    <video data-state="pause" playsinline poster="/img-2/coach-detail-banner-video-poster.webp">
+                        <source
+                            src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                            type="video/mp4">
+                    </video>
+                </div>
+                <p class="font-32 m-font-13" >Designed for fitness and wellness coaches aiming<br> for high-paying clients</p>
+                <div class="btn-box-2 flex-box justify-center mt-5">
+                    <a class="btn" href="">Watch Free Training</a>
+                    <a class="btn black-btn" href="">Schedule a meeting</a>
                 </div>
             </div>
        </div> 
     </section>
 
-    <section>
-        <ul>
-            <li>
-                <img src="" alt="">
-                <h4>Capture & Convert High-Value Leads</h4>
-            </li>
-            <li>
-                <img src="" alt="">
-                <h4>Charge More and Increase Prices without losing clients</h4>
-            </li>
-        </ul>
+    <section class="fw-marquee-section black-bg " >
+        <div class="fw-marquee">
+            <ul class="fw-marquee-track" >
+                <li class="flex-box" >
+                    <h4 class="font-25 flex-box flex-center" > <span><img src="/img-2/hand-icon.webp" alt=""></span> Capture & Convert High-Value Leads</h4>
+                </li>
+                <li class="flex-box" >
+                    <h4 class="font-25 flex-box flex-center" > <span><img src="/img-2/hand-icon.webp" alt=""></span> Charge More and Increase Prices without losing clients</h4>
+                </li>
+                <li class="flex-box" >
+                    <h4 class="font-25 flex-box flex-center" > <span><img src="/img-2/hand-icon.webp" alt=""></span> Real-Time Insights & Performance Analytics</h4>
+                </li>
+                <li class="flex-box" >
+                    <h4 class="font-25 flex-box flex-center" > <span><img src="/img-2/hand-icon.webp" alt=""></span> Capture & Convert High-Value Leads</h4>
+                </li>
+                <li class="flex-box" >
+                    <h4 class="font-25 flex-box flex-center" > <span><img src="/img-2/hand-icon.webp" alt=""></span> Charge More and Increase Prices without losing clients</h4>
+                </li>
+                <li class="flex-box" >
+                    <h4 class="font-25 flex-box flex-center" > <span><img src="/img-2/hand-icon.webp" alt=""></span> Real-Time Insights & Performance Analytics</h4>
+                </li>
+                <li class="flex-box" >
+                    <h4 class="font-25 flex-box flex-center" > <span><img src="/img-2/hand-icon.webp" alt=""></span> Capture & Convert High-Value Leads</h4>
+                </li>
+                <li class="flex-box" >
+                    <h4 class="font-25 flex-box flex-center" > <span><img src="/img-2/hand-icon.webp" alt=""></span> Charge More and Increase Prices without losing clients</h4>
+                </li>
+                <li class="flex-box" >
+                    <h4 class="font-25 flex-box flex-center" > <span><img src="/img-2/hand-icon.webp" alt=""></span> Real-Time Insights & Performance Analytics</h4>
+                </li>
+                <li class="flex-box" >
+                    <h4 class="font-25 flex-box flex-center" > <span><img src="/img-2/hand-icon.webp" alt=""></span> Capture & Convert High-Value Leads</h4>
+                </li>
+                <li class="flex-box" >
+                    <h4 class="font-25 flex-box flex-center" > <span><img src="/img-2/hand-icon.webp" alt=""></span> Charge More and Increase Prices without losing clients</h4>
+                </li>
+                <li class="flex-box" >
+                    <h4 class="font-25 flex-box flex-center" > <span><img src="/img-2/hand-icon.webp" alt=""></span> Real-Time Insights & Performance Analytics</h4>
+                </li>
+            </ul>
+        </div>
     </section>
 
-    <section>
+    <section class="fw-the-problem-section black-bg com-padding" >
         <div class="container">
-            <div class="">
-                <div class="">
-                    <img src="" alt="">
+            <div class="fw-the-problem-box flex-box space-between flex-center">
+                <div class="img-box mobile-none">
+                    <img src="/img-2/fw-problem-img.webp" alt="">
                 </div>
-                <div class="">
-                    <h6>The Problem // Stakes //</h6>
-                    <h2>Fitness coach for 5+ years but still seeking growth opportunities?</h2>
-                    <ul>
-                       <li>Stuck in a cycle of inconsistent income despite years of experience</li>
-                       <li>Unable to scale beyond one-on-one sessions, leaving no room for growth</li>
-                       <li>Investing countless hours in marketing without seeing tangible results</li>
-                       <li>Feeling overwhelmed managing your business with no clear path to scale beyond your current level</li>
+                <div class="text-box">
+                    <h6 class="h6" >The Problem // Stakes //</h6>
+                    <h2>Fitness coach for 5+ years<br> but still seeking growth opportunities?</h2>
+                    <div class="img-box desktop-none">
+                        <img src="/img-2/fw-problem-img.webp" alt="">
+                    </div>
+                    <ul class="disc-li" >
+                       <li class="font-22 m-font-14" >Stuck in a cycle of inconsistent income despite years of experience</li>
+                       <li class="font-22 m-font-14" >Unable to scale beyond one-on-one sessions, leaving no room for growth</li>
+                       <li class="font-22 m-font-14" >Investing countless hours in marketing without seeing tangible results</li>
+                       <li class="font-22 m-font-14" >Feeling overwhelmed managing your business with no clear path to scale beyond your current level</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section>
+    <section class="become-member-section fw-body-banner" style="background-image: url(/img-2/fw-body-banner.webp);">
         <div class="container">
-            <div class="">
+            <div class="heading-box col-55 full-950">
                 <h6>The Current State (Ignite The Pain)</h6>
-                <h2>Want to break free from the low-pricing trap?</h2>
-                <ul>
-                    <li>Offering premium services at low rates leads to burnout</li>
-                    <li>Struggling to Attract High-Ticket Clients</li>
-                    <li>One-off sessions and low prices hinder steady income.</li>
-                    <li>Managing schedules, bookings, & client communication alone.</li>
+                <h2>Want to break free from<br> the low-pricing trap?</h2>
+                <ul class="disc-li" >
+                    <li class="font-22 m-font-14" >Offering premium services at low rates leads to burnout</li>
+                    <li class="font-22 m-font-14" >Struggling to Attract High-Ticket Clients</li>
+                    <li class="font-22 m-font-14" >One-off sessions and low prices hinder steady income.</li>
+                    <li class="font-22 m-font-14" >Managing schedules, bookings, & client communication alone.</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <section>
+    <section class="fw-value-section com-padding black-bg" >
         <div class="container">
-            <div class="">
-                <h6>The Solution & Value Proposition</h6>
+            <div class="fw-value-box center" >
+                <h6 class="h6" >The Solution & Value Proposition</h6>
                 <h2>Your ultimate solution to get <br>high-ticket clients for fitness and<br> wellness coaches</h2>
-                <div class="">
-                    <div class="">
-                        <h4>Offerings</h4>
-                        <p>Build a non-linear marketing system that generates consistent, predictable and relevant leads</p>
-                        <img src="" alt="">
-                        <ul>
-                            <li>1-on-1 mentorship</li>
-                            <li>Tailored mastermind blueprint</li>
-                            <li>DWY mode</li>
-                            <li>We help you create a profitable offer while minimizing workload.</li>
+                <div class="flex-box space-between">
+                    <div class="fw-value-inner-box">
+                        <h3 class="font-42 m-font-18" >Offerings</h3>
+                        <p class="font-22 m-font-12" >Build a non-linear marketing system that generates consistent, predictable and relevant leads</p>
+                        <img src="/img-2/fw-value-img-1.webp" alt="">
+                        <ul class="disc-li blue-tick-li" >
+                            <li class="font-22 m-font-12" >1-on-1 mentorship</li>
+                            <li class="font-22 m-font-12" >Tailored mastermind blueprint</li>
+                            <li class="font-22 m-font-12" >DWY mode</li>
+                            <li class="font-22 m-font-12" >We help you create a profitable offer while minimizing workload.</li>
                         </ul>
-                        <a href="">Set up your first funnel</a>
+                        <a class="btn black-btn m-font-10 fw-300"  href="">Set up your first funnel</a>
                     </div>
-                    <div class="">
-                        <h4>Building Model</h4>
-                        <p>Develop a group coaching model to serve multiple clients and maximize profits and efficiency.</p>
-                        <img src="" alt="">
-                        <ul>
-                            <li>Structured group programs</li>
-                            <li>Scalable coaching system</li>
-                            <li>Interactive learning environment</li>
-                            <li>We clarify your marketing message to showcase client transformation clearly.</li>
+                    <div class="fw-value-inner-box">
+                        <h3 class="font-42 m-font-18" >Building Model</h3>
+                        <p class="font-22 m-font-12" >Develop a group coaching model to serve multiple clients and maximize profits and efficiency.</p>
+                        <img src="/img-2/fw-value-img-2.webp" alt="">
+                        <ul class="disc-li blue-tick-li" >
+                            <li class="font-22 m-font-12" >Structured group programs</li>
+                            <li class="font-22 m-font-12" >Scalable coaching system</li>
+                            <li class="font-22 m-font-12" >Interactive learning environment</li>
+                            <li class="font-22 m-font-12" >We clarify your marketing message to showcase client transformation clearly.</li>
                         </ul>
-                        <a href="">Start your first group program</a>
+                        <a class="btn black-btn m-font-10 fw-300"  href="">Start your first group program</a>
                     </div>
                 </div>
-                <div class="">
-                    <div class="">
-                        <img src="" alt="">
+                <div class="fw-blueprint-box flex-box space-between">
+                    <div class="img-box">
+                        <img src="/img-2/fw-value-img-3.webp" alt="">
                     </div>
-                    <div class="">
-                        <h4>Exclusive Blueprint</h4>
-                        <p>Proven Blueprint to Land High-Ticket Clients & Scale Your Fitness Business with Ease.</p>
-                        <ul>
-                            <li>Achieve rapid ROI</li>
-                            <li>We help you refine your MVP to align perfectly with the needs of your high-paying clients.</li>
+                    <div class="text-box">
+                        <h3 class="font-42 m-font-18" >Exclusive Blueprint</h3>
+                        <p class="font-22 m-font-12" >Proven Blueprint to Land High-Ticket Clients & Scale Your Fitness Business with Ease.</p>
+                        <ul class="disc-li blue-tick-li" >
+                            <li class="font-22 m-font-12" >Achieve rapid ROI</li>
+                            <li class="font-22 m-font-12" >We help you refine your MVP to align perfectly with the needs of your high-paying clients.</li>
                         </ul>
-                        <a href="">Get your proven blueprint</a>
+                        <a class="btn black-btn m-font-10 fw-300" href="">Get your proven blueprint</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section>
+    <section class="fw-testimonials-section com-padding" >
         <div class="container">
-            <ul>
-                <li class="">
-                    <div class="">
-                        <h6>Live Testimonials</h6>
-                        <h2>How ayurvedic gut <strong>coach sachin</strong> went from rs 50k/month to rs 2-3 lakhs/month.</h2>
-                        <p>Meet Sachin Hebbar, founder of Self Healers Hub. He specializes in holistic health coaching, focusing on gut health, emotions, and mindset. Previously, he had 400 community members and 50 clients.</p>
+            <ul class="fw-testimonials-listing" >
+                <li class="flex-box space-between" >
+                    <div class="text-box">
+                        <h6 class="h6" >Live Testimonials</h6>
+                        <h2>How ayurvedic gut <strong>health coach sachin</strong> went from rs 50k/month to rs 2-3 lakhs/month.</h2>
+                        <p class="font-25 m-font-15" >Meet Sachin Hebbar, founder of Self Healers Hub. He specializes in holistic health coaching, focusing on gut health, emotions, and mindset. Previously, he had 400 community members and 50 clients.</p>
                     </div>
-                    <div class="">
-                        <img src="" alt="">
-                        <div class="">
-                            <img src="" alt="">
-                            <h4>$23,013</h4>
-                            <p>Average first-year revenue increase for gym owners after mentorship.</p>
+                    <div class="img-box relative">
+                        <img src="/img-2/fw-testimonial-img.webp" alt="">
+                        <div class="left-box">
+                            <img src="/img-2/fw-testimonial-icon.webp" alt="">
+                            <h3>$23,013</h3>
+                            <p class="font-22 m-font-10" >Average first-year revenue increase for gym owners after mentorship.</p>
                         </div>
-                        <div class="">
-                            <h4>24.8%</h4>
-                            <p>Two-brain mentee hourly earnings</p>
+                        <div class="right-box">
+                            <h3>24.8%</h3>
+                            <p class="font-22 m-font-10" >Two-brain mentee hourly earnings</p>
                         </div>
                     </div>
                 </li>
@@ -146,35 +258,37 @@
         </div>
     </section>
 
-    <section>
+    <section class="fw-program-section com-padding black-bg" >
         <div class="container">
-            <div class="">
-                <h6>The Impact of the Program</h6>
+            <div class="fw-program-box center">
+                <h6 class="h6">The Impact of the Program</h6>
                 <h2>Why high ticket consulting is a game-changer<br> for fitness and wellness coaches</h2>
-                <ul>
-                    <li>
-                        <div class="">
-                            01
+                <ul class="fw-program-listing" >
+                    <li class="flex-box space-between" >
+                        <div class="num-box relative">
+                            <h3>01</h3>
+                            <div class="gradiant"></div>
                         </div>
-                        <div class="">
-                            <h4>Save & fast-track scaling with our risk-free high-ticket consulting.</h4>
-                            <ul>
-                                <li>Save INR 1,80,000/month by avoiding hefty consulting fees.</li>
-                                <li>Skip the trial-and-error & fast-track your success with our proven strategies.</li>
-                                <li>No results, no payment—scale your business with zero financial risk.</li>
+                        <div class="text-box">
+                            <h4 class="font-42 m-font-22" >Save & fast-track scaling with<br> our risk-free high-ticket<br> consulting.</h4>
+                            <ul class="disc-li blue-tick-li" >
+                                <li class="font-22 m-font-14" >Save INR 1,80,000/month by avoiding hefty consulting fees.</li>
+                                <li class="font-22 m-font-14" >Skip the trial-and-error & fast-track your success with our proven strategies.</li>
+                                <li class="font-22 m-font-14" >No results, no payment—scale your business with zero financial risk.</li>
                             </ul>
                         </div>
                     </li>
-                    <li>
-                        <div class="">
-                            02
+                    <li class="flex-box space-between" >
+                        <div class="num-box relative">
+                            <h3>02</h3>
+                            <div class="gradiant"></div>
                         </div>
-                        <div class="">
-                            <h4>Attract high-ticket clients effortlessly</h4>
-                            <ul>
-                                <li> Stop undercharging—charge what you're truly worth and build a premium client base</li>
-                                <li>Position your services as high-value and attract clients willing to pay top dollar.</li>
-                                <li>Leverage targeted strategies that empower fitness and wellness coaches to boost client acquisition and differentiate themselves in a competitive market.</li>
+                        <div class="text-box">
+                            <h4 class="font-42 m-font-22"  >Attract high-ticket clients effortlessly</h4>
+                            <ul class="disc-li blue-tick-li" >
+                                <li class="font-22 m-font-14" > Stop undercharging—charge what you're truly worth and build a premium client base</li>
+                                <li class="font-22 m-font-14" >Position your services as high-value and attract clients willing to pay top dollar.</li>
+                                <li class="font-22 m-font-14" >Leverage targeted strategies that empower fitness and wellness coaches to boost client acquisition and differentiate themselves in a competitive market.</li>
                             </ul>
                         </div>
                     </li>
@@ -183,78 +297,76 @@
         </div>
     </section>
 
-    <section>
+    <section class="fw-who-is-section com-padding" >
         <div class="container">
-            <ul class="">
+            <ul class="fw-who-is-listing flex-box">
                 <li>
-                    <h2>Who is it for?</h2>
-                    <p>Individuals seeking holistic health support.</p>
-                    <img src="" alt="">
+                    <h2 class="color-black" >Who is it for?</h2>
+                    <p class="font-25 m-font-15">Individuals seeking holistic health support.</p>
+                    <img src="/img-2/fw-triple-arrow.webp" alt="">
                 </li>
                 <li>
-                    <div class="">
-                        <img src="" alt="">
+                    <div class="img-box">
+                        <img src="/img-2/fw-who-is-img-1.webp" alt="">
                     </div>
-                    <p>Yoga Instructors</p>
+                    <p class="color-black font-25 m-font-13" >Yoga Instructors</p>
                 </li>
                 <li>
-                    <div class="">
-                        <img src="" alt="">
+                    <div class="img-box">
+                        <img src="/img-2/fw-who-is-img-1.webp" alt="">
                     </div>
-                    <p>Holistic Health Coaches</p>
+                    <p class="color-black font-25 m-font-13" >Holistic Health Coaches</p>
                 </li>
                 <li>
-                    <div class="">
-                        <img src="" alt="">
+                    <div class="img-box">
+                        <img src="/img-2/fw-who-is-img-1.webp" alt="">
                     </div>
-                    <p>Pilates Coaches</p>
+                    <p class="color-black font-25 m-font-13" >Pilates Coaches</p>
                 </li>
                 <li>
-                    <div class="">
-                        <img src="" alt="">
+                    <div class="img-box">
+                        <img src="/img-2/fw-who-is-img-1.webp" alt="">
                     </div>
-                    <p>Sports Performance Coaches</p>
+                    <p class="color-black font-25 m-font-13" >Sports Performance Coaches</p>
                 </li>
                 <li>
-                    <div class="">
-                        <img src="" alt="">
+                    <div class="img-box">
+                        <img src="/img-2/fw-who-is-img-1.webp" alt="">
                     </div>
-                    <p>Functional Movement Coaches</p>
+                    <p class="color-black font-25 m-font-13" >Functional Movement Coaches</p>
                 </li>
                 <li>
-                    <div class="">
-                        <img src="" alt="">
+                    <div class="img-box">
+                        <img src="/img-2/fw-who-is-img-1.webp" alt="">
                     </div>
-                    <p>Wellness Retreat Coaches</p>
+                    <p class="color-black font-25 m-font-13" >Wellness Retreat Coaches</p>
                 </li>
                 <li>
-                    <div class="">
-                        <img src="" alt="">
+                    <div class="img-box">
+                        <img src="/img-2/fw-who-is-img-1.webp" alt="">
                     </div>
-                    <p>Stress Management Coaches</p>
+                    <p class="color-black font-25 m-font-13" >Stress Management Coaches</p>
                 </li>
             </ul>
         </div>
     </section>
 
-    <section>
-        <div class="container">
-            <div class="">
-                <h6>Join Us!</h6>
-                <h2>Join the revolution</h2>
-                <p>Become part of a transformative wellness journey today.</p>
-                <a href="">
-                    Become a member
-                </a>
-                <div class="">
-                    <div class="">
-                        <img src="" alt="">
-                        <h4>700+ Clients</h4>
+    <section class="fw-join-us-section" style="background-image: url(/img-2/fw-join-us-main-bg.webp);" >
+        <div class="fw-join-us-bg relative com-padding" style="background-image: url(/img-2/fw-join-us-bg.webp);">
+            <div class="fw-join-us-box center">
+                <h6 class="h6 color-white" >Join Us!</h6>
+                <h2 class="color-white" >Join the revolution</h2>
+                <p class="font-25 color-white m-font-16" >Become part of a transformative<br> wellness journey today.</p>
+                <a class="btn" href="">Become a member</a>
+                <div class="fw-join-us-usp">
+                    <div class="usp-box">
+                        <img src="/img-2/fw-join-us-usp-1.webp" alt="">
+                        <h4 class="font-25 m-font-15" >700+ Clients</h4>
                         <p>Trustpilot rating 4.8/5★, visitors trust us.</p>
                     </div>
-                    <div class="">
-                        <img src="" alt="">
-                        <h4>26,50,000</h4>
+                    <div class="usp-box">
+                        <img src="/img-2/fw-join-us-usp-1.webp" alt="">
+                        <h4 class="font-25 m-font-15" >26,50,000</h4>
                         <p>Highest-ticket amount for one client</p>
                     </div>
                 </div>
@@ -262,150 +374,402 @@
         </div>
     </section>
 
-    <section>
+
+    <section class="success-stories-section black-bg com-padding">
         <div class="container">
-            <div class="">
+            <div class="heading-box center col-5 col-center">
                 <h6>Success Stories</h6>
-                <h2>Real results: high ticket  sales<br> success stories</h2>
-                <ul>
-                    <li>
-                        <video src=""></video>
-                        <p>From CA to Stock Market Coach: Omkar's Journey to Earning ₹7 Lakhs Without Ads</p>
-                    </li>
-                    <li>
-                        <video src=""></video>
-                        <p>From CA to Stock Market Coach: Omkar's Journey to Earning ₹7 Lakhs Without Ads</p>
-                    </li>
-                </ul>
-                <a href="">Watch Free Training</a>
+                <h2 class="m-font-25" >Still Unsure? Watch These <br>Success Stories</h2>
+            </div>
+            <div class="video-list">
+                <div class="video-item">
+                    <div class="video-box">
+                        <button type="button" class="video__fullscreen-button"><svg class="video__fullscreen-icon"
+                                xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                                <polygon points="0 0 0 5 2 5 2 2 5 2 5 0 " />
+                                <polygon points="14 0 9 0 9 2 12 2 12 5 14 5 " />
+                                <polygon points="14 14 14 9 12 9 12 12 9 12 9 14 " />
+                                <polygon points="0 14 5 14 5 12 2 12 2 9 0 9 " />
+                            </svg>
+                        </button>
+                        <button type="button" class="video__play-button" data-button-state="pause">
+                            <svg class="video__play-button-icon video__play-button-icon--play" viewBox="0 0 82 82"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="41" cy="41" r="41" fill="#36B0FF" />
+                                <path
+                                    d="M37.5063 51.8722V28.7778C37.5063 28.0131 38.3914 27.5886 38.9878 28.0672L53.4707 39.6919C53.927 40.0582 53.9247 40.7535 53.466 41.1167L38.9831 52.5864C38.3858 53.0594 37.5063 52.6341 37.5063 51.8722Z"
+                                    fill="white" />
+                            </svg>
+                            <svg class="video__play-button-icon video__play-button-icon--pause"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140">
+                                <path fill-rule="evenodd" clip-rule="evenodd" fill="white"
+                                    d="M70 140L70 140c-38.7 0-70-31.3-70-70v0C0 31.3 31.3 0 70 0h0c38.7 0 70 31.3 70 70v0C140 108.7 108.7 140 70 140z" />
+                                <rect fill-rule="evenodd" clip-rule="evenodd" x="56" y="50.8" class="st1" width="8.8"
+                                    height="38.5" />
+                                <rect fill-rule="evenodd" clip-rule="evenodd" x="75.2" y="50.8" class="st1" width="8.8"
+                                    height="38.5" />
+                            </svg>
+                        </button>
+                        <video data-state="pause" playsinline poster="img/image-399.png">
+                            <source
+                                src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="txt">
+                        <p class="m-font-12" >From CA to Stock Market Coach: Omkar's Journey to Earning ₹7 Lakhs Without Ads</p>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <div class="video-box">
+                        <button type="button" class="video__fullscreen-button"><svg class="video__fullscreen-icon"
+                                xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                                <polygon points="0 0 0 5 2 5 2 2 5 2 5 0 " />
+                                <polygon points="14 0 9 0 9 2 12 2 12 5 14 5 " />
+                                <polygon points="14 14 14 9 12 9 12 12 9 12 9 14 " />
+                                <polygon points="0 14 5 14 5 12 2 12 2 9 0 9 " />
+                            </svg>
+                        </button>
+                        <button type="button" class="video__play-button" data-button-state="pause">
+                            <svg class="video__play-button-icon video__play-button-icon--play" viewBox="0 0 82 82"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="41" cy="41" r="41" fill="#36B0FF" />
+                                <path
+                                    d="M37.5063 51.8722V28.7778C37.5063 28.0131 38.3914 27.5886 38.9878 28.0672L53.4707 39.6919C53.927 40.0582 53.9247 40.7535 53.466 41.1167L38.9831 52.5864C38.3858 53.0594 37.5063 52.6341 37.5063 51.8722Z"
+                                    fill="white" />
+                            </svg>
+                            <svg class="video__play-button-icon video__play-button-icon--pause"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140">
+                                <path fill-rule="evenodd" clip-rule="evenodd" fill="white"
+                                    d="M70 140L70 140c-38.7 0-70-31.3-70-70v0C0 31.3 31.3 0 70 0h0c38.7 0 70 31.3 70 70v0C140 108.7 108.7 140 70 140z" />
+                                <rect fill-rule="evenodd" clip-rule="evenodd" x="56" y="50.8" class="st1" width="8.8"
+                                    height="38.5" />
+                                <rect fill-rule="evenodd" clip-rule="evenodd" x="75.2" y="50.8" class="st1" width="8.8"
+                                    height="38.5" />
+                            </svg>
+                        </button>
+                        <video data-state="pause" playsinline poster="img/image-399.png">
+                            <source
+                                src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="txt">
+                        <p class="m-font-12" >From CA to Stock Market Coach: Omkar's Journey to Earning ₹7 Lakhs Without Ads</p>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <div class="video-box">
+                        <button type="button" class="video__fullscreen-button"><svg class="video__fullscreen-icon"
+                                xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                                <polygon points="0 0 0 5 2 5 2 2 5 2 5 0 " />
+                                <polygon points="14 0 9 0 9 2 12 2 12 5 14 5 " />
+                                <polygon points="14 14 14 9 12 9 12 12 9 12 9 14 " />
+                                <polygon points="0 14 5 14 5 12 2 12 2 9 0 9 " />
+                            </svg>
+                        </button>
+                        <button type="button" class="video__play-button" data-button-state="pause">
+                            <svg class="video__play-button-icon video__play-button-icon--play" viewBox="0 0 82 82"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="41" cy="41" r="41" fill="#36B0FF" />
+                                <path
+                                    d="M37.5063 51.8722V28.7778C37.5063 28.0131 38.3914 27.5886 38.9878 28.0672L53.4707 39.6919C53.927 40.0582 53.9247 40.7535 53.466 41.1167L38.9831 52.5864C38.3858 53.0594 37.5063 52.6341 37.5063 51.8722Z"
+                                    fill="white" />
+                            </svg>
+                            <svg class="video__play-button-icon video__play-button-icon--pause"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140">
+                                <path fill-rule="evenodd" clip-rule="evenodd" fill="white"
+                                    d="M70 140L70 140c-38.7 0-70-31.3-70-70v0C0 31.3 31.3 0 70 0h0c38.7 0 70 31.3 70 70v0C140 108.7 108.7 140 70 140z" />
+                                <rect fill-rule="evenodd" clip-rule="evenodd" x="56" y="50.8" class="st1" width="8.8"
+                                    height="38.5" />
+                                <rect fill-rule="evenodd" clip-rule="evenodd" x="75.2" y="50.8" class="st1" width="8.8"
+                                    height="38.5" />
+                            </svg>
+                        </button>
+                        <video data-state="pause" playsinline poster="img/image-399.png">
+                            <source
+                                src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="txt">
+                        <p class="m-font-12" >From CA to Stock Market Coach: Omkar's Journey to Earning ₹7 Lakhs Without Ads</p>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <div class="video-box">
+                        <button type="button" class="video__fullscreen-button"><svg class="video__fullscreen-icon"
+                                xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                                <polygon points="0 0 0 5 2 5 2 2 5 2 5 0 " />
+                                <polygon points="14 0 9 0 9 2 12 2 12 5 14 5 " />
+                                <polygon points="14 14 14 9 12 9 12 12 9 12 9 14 " />
+                                <polygon points="0 14 5 14 5 12 2 12 2 9 0 9 " />
+                            </svg>
+                        </button>
+                        <button type="button" class="video__play-button" data-button-state="pause">
+                            <svg class="video__play-button-icon video__play-button-icon--play" viewBox="0 0 82 82"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="41" cy="41" r="41" fill="#36B0FF" />
+                                <path
+                                    d="M37.5063 51.8722V28.7778C37.5063 28.0131 38.3914 27.5886 38.9878 28.0672L53.4707 39.6919C53.927 40.0582 53.9247 40.7535 53.466 41.1167L38.9831 52.5864C38.3858 53.0594 37.5063 52.6341 37.5063 51.8722Z"
+                                    fill="white" />
+                            </svg>
+                            <svg class="video__play-button-icon video__play-button-icon--pause"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140">
+                                <path fill-rule="evenodd" clip-rule="evenodd" fill="white"
+                                    d="M70 140L70 140c-38.7 0-70-31.3-70-70v0C0 31.3 31.3 0 70 0h0c38.7 0 70 31.3 70 70v0C140 108.7 108.7 140 70 140z" />
+                                <rect fill-rule="evenodd" clip-rule="evenodd" x="56" y="50.8" class="st1" width="8.8"
+                                    height="38.5" />
+                                <rect fill-rule="evenodd" clip-rule="evenodd" x="75.2" y="50.8" class="st1" width="8.8"
+                                    height="38.5" />
+                            </svg>
+                        </button>
+                        <video data-state="pause" playsinline poster="img/image-399.png">
+                            <source
+                                src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="txt">
+                        <p class="m-font-12" >From CA to Stock Market Coach: Omkar's Journey to Earning ₹7 Lakhs Without Ads</p>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <div class="video-box">
+                        <button type="button" class="video__fullscreen-button"><svg class="video__fullscreen-icon"
+                                xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                                <polygon points="0 0 0 5 2 5 2 2 5 2 5 0 " />
+                                <polygon points="14 0 9 0 9 2 12 2 12 5 14 5 " />
+                                <polygon points="14 14 14 9 12 9 12 12 9 12 9 14 " />
+                                <polygon points="0 14 5 14 5 12 2 12 2 9 0 9 " />
+                            </svg>
+                        </button>
+                        <button type="button" class="video__play-button" data-button-state="pause">
+                            <svg class="video__play-button-icon video__play-button-icon--play" viewBox="0 0 82 82"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="41" cy="41" r="41" fill="#36B0FF" />
+                                <path
+                                    d="M37.5063 51.8722V28.7778C37.5063 28.0131 38.3914 27.5886 38.9878 28.0672L53.4707 39.6919C53.927 40.0582 53.9247 40.7535 53.466 41.1167L38.9831 52.5864C38.3858 53.0594 37.5063 52.6341 37.5063 51.8722Z"
+                                    fill="white" />
+                            </svg>
+                            <svg class="video__play-button-icon video__play-button-icon--pause"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140">
+                                <path fill-rule="evenodd" clip-rule="evenodd" fill="white"
+                                    d="M70 140L70 140c-38.7 0-70-31.3-70-70v0C0 31.3 31.3 0 70 0h0c38.7 0 70 31.3 70 70v0C140 108.7 108.7 140 70 140z" />
+                                <rect fill-rule="evenodd" clip-rule="evenodd" x="56" y="50.8" class="st1" width="8.8"
+                                    height="38.5" />
+                                <rect fill-rule="evenodd" clip-rule="evenodd" x="75.2" y="50.8" class="st1" width="8.8"
+                                    height="38.5" />
+                            </svg>
+                        </button>
+                        <video data-state="pause" playsinline poster="img/image-399.png">
+                            <source
+                                src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="txt">
+                        <p class="m-font-12" >From CA to Stock Market Coach: Omkar's Journey to Earning ₹7 Lakhs Without Ads</p>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <div class="video-box">
+                        <button type="button" class="video__fullscreen-button"><svg class="video__fullscreen-icon"
+                                xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                                <polygon points="0 0 0 5 2 5 2 2 5 2 5 0 " />
+                                <polygon points="14 0 9 0 9 2 12 2 12 5 14 5 " />
+                                <polygon points="14 14 14 9 12 9 12 12 9 12 9 14 " />
+                                <polygon points="0 14 5 14 5 12 2 12 2 9 0 9 " />
+                            </svg>
+                        </button>
+                        <button type="button" class="video__play-button" data-button-state="pause">
+                            <svg class="video__play-button-icon video__play-button-icon--play" viewBox="0 0 82 82"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="41" cy="41" r="41" fill="#36B0FF" />
+                                <path
+                                    d="M37.5063 51.8722V28.7778C37.5063 28.0131 38.3914 27.5886 38.9878 28.0672L53.4707 39.6919C53.927 40.0582 53.9247 40.7535 53.466 41.1167L38.9831 52.5864C38.3858 53.0594 37.5063 52.6341 37.5063 51.8722Z"
+                                    fill="white" />
+                            </svg>
+                            <svg class="video__play-button-icon video__play-button-icon--pause"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140">
+                                <path fill-rule="evenodd" clip-rule="evenodd" fill="white"
+                                    d="M70 140L70 140c-38.7 0-70-31.3-70-70v0C0 31.3 31.3 0 70 0h0c38.7 0 70 31.3 70 70v0C140 108.7 108.7 140 70 140z" />
+                                <rect fill-rule="evenodd" clip-rule="evenodd" x="56" y="50.8" class="st1" width="8.8"
+                                    height="38.5" />
+                                <rect fill-rule="evenodd" clip-rule="evenodd" x="75.2" y="50.8" class="st1" width="8.8"
+                                    height="38.5" />
+                            </svg>
+                        </button>
+                        <video data-state="pause" playsinline poster="img/image-399.png">
+                            <source
+                                src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="txt">
+                        <p class="m-font-12" >From CA to Stock Market Coach: Omkar's Journey to Earning ₹7 Lakhs Without Ads</p>
+                    </div>
+                </div>
+            </div>
+            <div class=" btn-box flex-box mt-5 center flex-center">
+                <a href="" class="btn" >Watch Free Training</a>
             </div>
         </div>
     </section>
 
-    <section>
+    <section class="browse-course-section black-bg com-padding">
         <div class="container">
-            <div class="">
-                <div class="">
-                    <h6>The plan</h6>
-                    <h2>Get ready
+            <div class="flex-box space-between">
+                <div class="text-box col-3 full-950">
+                    <h6 class="h6">The plan</h6>
+                    <h2 class="m-font-25" >Get ready<br>
                         to start?</h2>
-                    <p>Boost your coaching or consulting business with this 30-minute growth strategy video.</p>
-                    <img src="" alt="">
+                    <p class="m-font-14" >Boost recurring revenue with dialogue-based selling to attract high-ticket fitness clients.</p>
+                    <img src="img/blue-arrow.png" alt="" class="blue-arrow">
                 </div>
-                <div class="">
-                    <h3>
-                        UAbility  Blue
-                    </h3>
-                    <p>
-                        The UAbility Blue Program offers a guided path to rapid business growth, teaching proven strategies for High Ticket Sales and premium clients through expert coaching and a supportive community.
-                    </p>
-                    <a href="">Learn More</a>
-                </div>
-                <div class="">
-                    <h3>
-                        UAbility Mastermind
-                    </h3>
-                    <p>
-                        The UAbility Mastermind Program offers personalized mentorship, interactive sessions, and high-ticket strategies to help you scale your business and achieve ₹10 Crore success with community support.
-                    </p>
-                    <a href="">Learn More</a>
+                <div class="col-6">
+                    <div class="browse-course-list">
+                        <div class="browse-course-box highlight">
+                            <h5>UAbility Blue</h5>
+                            <p>The UAbility Blue Program offers a guided path to rapid business growth, teaching proven strategies for High Ticket Sales and premium clients through expert coaching and a supportive community.</p>
+                            <a href="" class="btn m-font-10 fw-300">Learn More</a>
+                        </div>
+                        <div class="browse-course-box">
+                            <h5>UAbility Mastermind</h5>
+                            <p>The UAbility Mastermind Program offers personalized mentorship, interactive sessions, and high-ticket strategies to help you scale your business and achieve ₹10 Crore success with community support.</p>
+                            <a href="" class="btn m-font-10 fw-300">Learn More</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="">
-        <div class="">
-            <div class="">
-                <h6>Browse Blogs</h6>
-                <h2>UAbility's expert insights for <br>mastering high ticket consulting</h2>
-                <div class="">
-                    <a class="">High Ticket Mindset</a>
-                    <a class="">High Ticket Offers</a>
-                    <a class="">High Ticket Lead Generation</a>
-                    <a class="">High Ticket Sales</a>
-                    <a class="">High Ticket Conversion</a>
-                </div>
-                <ul class="">
-                    <li class="">
-                        <div class="">
-                            <img src="/img/" alt="">
-                        </div>
-                        <h3>Engaging students with UAbility assessments & quizzes</h3>
-                        <p>Discover effective strategies to maintain student engagement through interactive assessments and quizzes designed by UAbility.</p>
-                        <a href="">Learn More</a>
-                    </li>
-                    <li class="">
-                        <div class="">
-                            <img src="/img/" alt="">
-                        </div>
-                        <h3>Maximizing course engagement with UAbility content</h3>
-                        <p>Explore methods for enhancing course engagement and retention using content strategies tailored by UAbility experts.</p>
-                        <a href="">Learn More</a>
-                    </li>
-                    <li class="">
-                        <div class="">
-                            <img src="/img/" alt="">
-                        </div>
-                        <h3>Engaging students with UAbility assessments & quizzes</h3>
-                        <p>Implement assessments and quizzes effectively to boost engagement and learning in a high-ticket consulting environment.</p>
-                        <a href="">Learn More</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section>
+    <section class="fw-blogs-section com-padding">
         <div class="container">
-            <div class="">
-                <h6>Schedule a meeting</h6>
-                <h2>Receive tailored coaching
-                    to attract premium clients
-                    effectively.
-                </h2>
-                <p>Boost Your Fitness and Wellness Business with
-                    UAbility's High-Ticket Consulting
-                </p>                    
-                <a href="">Apply Now</a>    
-            </div>
-        </div>
-    </section>
-
-    <section class="">
-        <div class="">
-            <div class="">
-                <h6>F.A.Q’s</h6>
-                <h2>Have a question?</h2>
-                <ul>
-                    <li class="">
-                        <h4 class="">Who is this program for?</h4>
-                        <p></p>
+            <div class="fw-blogs-box center">
+                <h6 class="h6 color-black" >Browse Blogs</h6>
+                <h2 class="color-black m-font-25" >UAbility's expert insights for <br>mastering high ticket consulting</h2>
+                <div class="pagination flex-box flex-center">
+                    <a class="active">High Ticket Mindset</a>
+                    <a >High Ticket Offers</a>
+                    <a >High Ticket Lead Generation</a>
+                    <a >High Ticket Sales</a>
+                    <a >High Ticket Conversion</a>
+                </div>
+                <ul class="fw-blogs-listing flex-box">
+                    <li>
+                        <div class="img-box">
+                            <img src="/img-2/fw-blogs-img-1.webp" alt="">
+                        </div>
+                        <h3 class="font-32 color-black m-font-20" >Engaging students <br>with UAbility assessments <br>& quizzes</h3>
+                        <p>Discover effective strategies to maintain student engagement through interactive assessments and quizzes designed by UAbility.</p>
+                        <a href="">Learn More <span><img src="/img-2/blue-arrow.png" alt=""></span></a>
                     </li>
-                    <li class="">
-                        <h4 class="">How long does the program typically take to complete?</h4>
-                        <p></p>
+                    <li>
+                        <div class="img-box">
+                            <img src="/img-2/fw-blogs-img-2.webp" alt="">
+                        </div>
+                        <h3 class="font-32 color-black m-font-20" >Maximizing course engagement with UAbility content</h3>
+                        <p>Explore methods for enhancing course engagement and retention using content strategies tailored by UAbility experts.</p>
+                        <a href="">Learn More <span><img src="/img-2/blue-arrow.png" alt=""></span></a>
                     </li>
-                    <li class="">
-                        <h4 class="">What is the success rate of your coaching program?</h4>
-                        <p></p>
-                    </li>
-                    <li class="">
-                        <h4 class="">Is there a refund policy?</h4>
-                        <p></p>
-                    </li>
-                    <li class="">
-                        <h4 class="">How do I know if your coaching program is right for me?</h4>
-                        <p></p>
-                    </li>
-                    <li class="">
-                        <h4 class="">What is the difference between your coaching program and other similar offerings?</h4>
-                        <p></p>
+                    <li>
+                        <div class="img-box">
+                            <img src="/img-2/fw-blogs-img-3.webp" alt="">
+                        </div>
+                        <h3 class="font-32 color-black m-font-20" >Engaging students <br>with UAbility assessments <br>& quizzes</h3>
+                        <p>Implement assessments and quizzes effectively to boost engagement and learning in a high-ticket consulting environment.</p>
+                        <a href="">Learn More <span><img src="/img-2/blue-arrow.png" alt=""></span></a>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
+
+    <section class="become-member-section fw-meeting-section" style="background-image: url(/img-2/fw-meeting-bg.webp);">
+        <div class="container">
+            <div class="heading-box col-55 full-950">
+                <h6 class="h6">Schedule a meeting</h6>
+                <h2 class="m-font-25" >Receive tailored coaching<br>
+                    to attract premium clients<br>
+                    effectively.</h2>
+                <p class="m-font-14" >Boost Your Fitness and Wellness Business with<br>
+                    UAbility's High-Ticket Consulting</p>
+                <a href="" class="btn m-font-10 fw-300">Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        
+        // Get all play and fullscreen buttons
+        const videos = Array.from(document.getElementsByClassName("video__play-button"));
+        const videoFullscreenButtons = Array.from(document.getElementsByClassName("video__fullscreen-button"));
+        
+        // Loop through all videos
+        videos.forEach((videoButton) => {
+          videoButton.addEventListener("click", function() {
+        
+            const video = this.nextElementSibling;
+            const videoWrapper = this.parentElement;
+        
+            if (video.paused) {
+              // Play the video
+              video.play();
+              video.setAttribute('data-state', 'play');
+              video.setAttribute('data-state-reload', 'false');
+              videoWrapper.setAttribute('data-state', 'play');
+        
+              // Update button state
+              this.setAttribute('data-button-state', 'play');
+              this.setAttribute('data-button-state-reload', 'false');
+            } else {
+              // Pause the video
+              video.pause();
+              video.setAttribute('data-state', 'pause');
+              videoWrapper.setAttribute('data-state', 'pause');
+        
+              // Update button state
+              this.setAttribute('data-button-state', 'pause');
+            }
+        
+            // Handle video end event
+            video.onended = () => {
+              video.setAttribute('data-state', 'pause');
+              video.setAttribute('data-state-reload', 'true');
+        
+              // Update button state
+              this.setAttribute('data-button-state', 'pause');
+              this.setAttribute('data-button-state-reload', 'true');
+            };
+          });
+        });
+        
+        // Loop through all fullscreen buttons
+        videoFullscreenButtons.forEach((fullscreenButton) => {
+          fullscreenButton.addEventListener("click", function() {
+        
+            const video = this.nextElementSibling.nextElementSibling;
+        
+            if (video.requestFullscreen) {
+              video.requestFullscreen();
+            } else if (video.mozRequestFullScreen) { // Firefox
+              video.mozRequestFullScreen();
+            } else if (video.webkitRequestFullScreen) { // Chrome, Safari, Opera
+              video.webkitRequestFullScreen();
+            } else if (video.msRequestFullscreen) { // IE/Edge
+              video.msRequestFullscreen();
+            }
+          });
+        });
+        
+        });
+        
+        </script>
+
 
 </body>
 </html>
