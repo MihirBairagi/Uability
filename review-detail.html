@@ -3,77 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Review Detail</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main-child.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.js"></script>
 </head>
 <body>
-    <section>
+    <header>
+        <div class="header">
+            <button class="drawer-btn" aria-label="Open Drawer">
+                <svg width="29" height="18" viewBox="0 0 29 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M11.5547 1.28299C11.5547 0.807408 11.9402 0.421875 12.4158 0.421875H28.138C28.6136 0.421875 28.9991 0.807408 28.9991 1.28299C28.9991 1.75856 28.6136 2.1441 28.138 2.1441H12.4158C11.9402 2.1441 11.5547 1.75856 11.5547 1.28299Z"
+                        fill="white" />
+                    <path
+                        d="M0 8.80252C0 8.32694 0.385532 7.94141 0.861111 7.94141H28.1389C28.6145 7.94141 29 8.32694 29 8.80252C29 9.2781 28.6145 9.66363 28.1389 9.66363H0.861111C0.385533 9.66363 0 9.2781 0 8.80252Z"
+                        fill="white" />
+                    <path
+                        d="M11.5547 16.3181C11.5547 15.8426 11.9402 15.457 12.4158 15.457H28.138C28.6136 15.457 28.9991 15.8426 28.9991 16.3181C28.9991 16.7937 28.6136 17.1793 28.138 17.1793H12.4158C11.9402 17.1793 11.5547 16.7937 11.5547 16.3181Z"
+                        fill="white" />
+                </svg>
+            </button>
+            <div class="logo"><a href="/"><img src="img/logo.png" alt=""></a></div>
+            <nav class="nav">
+                <div class="drawer">
+                    <button class="close-btn close_drawer" aria-label="Close Drawer">
+                        <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"
+                            aria-label="Close Drawer" role="img">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                            </path>
+                        </svg>
+                    </button>
+                    <ul class="nav-list flex">
+                        <li><a href="javascript:void(0)" class="close_drawer">Programmes</a></li>
+                        <li><a href="javascript:void(0)" class="close_drawer">Journey</a></li>
+                        <li><a href="javascript:void(0)" class="close_drawer">Reviews</a></li>
+                        <li><a href="javascript:void(0)" class="close_drawer">About Us</a></li>
+                        <li><a href="javascript:void(0)" class="close_drawer">Who is it for ?</a></li>
+                    </ul>
+                    <a href="javascript:void(0)" class="btn-arrow">Apply Now</a>
+                </div>
+                <div class="blank close_drawer"></div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner-section review-listing-banner review-detail-banner" >
         <div class="container">
-            <div class="">
-                <p><a href="">home</a>><a href="">Reviews</a>> Rajul Rahul Raghuvanshi</p>
-                <h1>My story at the uability from 10 <br>Lakhs/year to making Rs 13.49 Lakhs<br> in 24-48 hours</h1>
-                <p>Explore inspiring success stories and testimonials from our clients who achieved growth with UAbility’s support.</p>
-                <img src="" alt="">
+            <ul class="breadcrumb-grp">
+                <li><a href="/">Home</a></li>
+                <li><a href="javascript:void(0)">Reviews</a></li>
+                <li><a href="javascript:void(0)">Blue</a></li>
+                <li>Rajul Rahul Raghuvanshi</li>
+            </ul>
+            <div class="heading-box">
+                <h1>
+                    My story at the uability from 10 Lakhs/year to making Rs 13.49 Lakhs in 24-48 hours
+                </h1>
+                <p>Explore inspiring success stories and testimonials from our clients<br> who achieved growth with UAbility’s support.</p>
+                <img src="img-2/review-detail-arrow.png" alt="">
             </div>
         </div>
     </section>
 
-    <section>
+    <section class="rd-review-detail-section com-padding black-bg" >
         <div class="container">
-            <div class="">
-                <div class="">
-                    <div class="">
-                        <div class="img-box">
-                            <img src="" alt="">
+            <div class="rd-review-detial-box flex-box space-between">
+                <div class="content-box col-6 full-950">
+                    <div class="rd-review-head-box flex-box flex-center space-between">
+                        <div class="img-box col-2">
+                            <img src="img-2/rd-founder-img.webp" alt="">
                         </div>
-                        <div class="text-box">
-                            <h4>Rajul Rahul Raghuvanshi</h4>
-                            <p>C.E.O OF RRR MEDIA GROUP.</p>
-                            <ul>
+                        <div class="text-box col-75 full-950">
+                            <h4 class="m-font" >Rajul Rahul Raghuvanshi</h4>
+                            <p class="font-20 m-font-13" >C.E.O OF RRR MEDIA GROUP.</p>
+                            <ul class="flex-box space-between flex-center" >
                                 <li>
-                                    <h6>Course Enroll</h6>
-                                    <p>UAbilityX Mastermind</p>
+                                    <h6 class="font-16 m-font-12" >Course Enroll</h6>
+                                    <p class="font-20 m-font-13 color-white" >UAbility Blue</p>
                                 </li>
                                 <li>
-                                    <h6>Enroll Year</h6>
-                                    <p>December 2023</p>
+                                    <h6 class="font-16 m-font-12" >Enroll Year</h6>
+                                    <p class="font-20 m-font-13 color-white" >December 2023</p>
                                 </li>
                                 <li>
-                                    <h6>Social Media</h6>
-                                    <div class="">
-                                        <img src="" alt="">
-                                        <img src="" alt="">
+                                    <h6 class="font-16 m-font-12" >Social Media</h6>
+                                    <div class="flex-box flex-center">
+                                        <img src="img-2/rd-ln.png" alt="">
+                                        <img src="img-2/rd-x.png" alt="">
                                     </div>
                                 </li>
                             </ul>
                         </div>
+                    </div>                    
+                    <p class="m-font-14" >A white-label digital marketing agency specializing in delivering tailored marketing solutions for global clients, offering services such as SEO, social media management, content creation, PPC, and branding to help businesses grow and expand internationally.</p>
+                    <div class="video-box relative cl-categories-video-box">
+                        <button type="button" class="video__fullscreen-button"><svg class="video__fullscreen-icon"
+                            xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                            <polygon points="0 0 0 5 2 5 2 2 5 2 5 0 " />
+                            <polygon points="14 0 9 0 9 2 12 2 12 5 14 5 " />
+                            <polygon points="14 14 14 9 12 9 12 12 9 12 9 14 " />
+                            <polygon points="0 14 5 14 5 12 2 12 2 9 0 9 " />
+                        </svg>
+                        </button>
+                        <button type="button" class="video__play-button" data-button-state="pause">
+                            <svg class="video__play-button-icon video__play-button-icon--play" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="41" cy="41" r="41" fill="#36B0FF"/>
+                                <path d="M37.5063 51.8722V28.7778C37.5063 28.0131 38.3914 27.5886 38.9878 28.0672L53.4707 39.6919C53.927 40.0582 53.9247 40.7535 53.466 41.1167L38.9831 52.5864C38.3858 53.0594 37.5063 52.6341 37.5063 51.8722Z" fill="white"/>
+                                </svg>
+                            <svg class="video__play-button-icon video__play-button-icon--pause"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140">
+                                <path fill-rule="evenodd" clip-rule="evenodd" fill="white"
+                                    d="M70 140L70 140c-38.7 0-70-31.3-70-70v0C0 31.3 31.3 0 70 0h0c38.7 0 70 31.3 70 70v0C140 108.7 108.7 140 70 140z" />
+                                <rect fill-rule="evenodd" clip-rule="evenodd" x="56" y="50.8" class="st1" width="8.8"
+                                    height="38.5" />
+                                <rect fill-rule="evenodd" clip-rule="evenodd" x="75.2" y="50.8" class="st1" width="8.8"
+                                    height="38.5" />
+                            </svg>
+                        </button>
+                        <video data-state="pause" playsinline poster="/img-2/rd-video-poster.webp">
+                            <source
+                                src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                                type="video/mp4">
+                        </video>
+
+                        
                     </div>
-                    <p>A white-label digital marketing agency specializing in delivering tailored marketing solutions for global clients, offering services such as SEO, social media management, content creation, PPC, and branding to help businesses grow and expand internationally.</p>
-                    <video src=""></video>
-                    <h2>Rajul's International SMMA: Services, Work, and Expertise</h2>
-                    <p>Rajul is the founder of an international SMMA, offering services like SEO, social media management, and digital advertising. His work focuses on helping businesses grow globally through tailored marketing solutions.</p>
-                    <ul>
-                        <li>Founder of a global digital marketing agency.</li>
-                        <li>Specializes in SEO, social media, and digital advertising.</li>
-                        <li>Focuses on global business growth through marketing.</li>
-                        <li>Tailored solutions for clients across various industries.</li>
-                        <li>Expertise in driving digital transformation for businesses.</li>
-                    </ul>
-                    <h2>Business Transformation After Joining UAbility: Key Overhauls and Improvements</h2>
-                    <p>Before joining UAbility, Rajul's business struggled with inconsistent growth and client retention. After implementing UAbility's strategies, he overhauled his marketing systems, offer positioning, and client fulfillment processes, leading to substantial business growth and more predictable revenue streams.</p>
-                    <h2>Scaling Revenue and Client Retention with Strategic Upgrades</h2>
-                    <p>By upgrading his offer positioning, paid inbound marketing system, high-ticket closing methodology, and fulfillment process, Rajul increased client retention from 2 months to over a year. This allowed him to charge higher fees while keeping existing clients, eliminating the need for constant client acquisition.</p>
-                    <h2>Achieving $18,000–$20,000 Weekly Revenue and Overcoming Financial Hurdles</h2>
-                    <p>What once seemed like an impossible financial goal, making $18,000–$20,000 weekly, has become a consistent reality for Rajul. With the strategies from UAbility, he now effortlessly achieves these numbers, ensuring sustainable business growth and increased profitability.</p>
+                    <div class="content-inner-box">
+                        <h2>Rajul's International SMMA: Services, Work, and Expertise</h2>
+                        <p>Rajul is the founder of an international SMMA, offering services like SEO, social media management, and digital advertising. His work focuses on helping businesses grow globally through tailored marketing solutions.</p>
+                        <ul class="underline" >
+                            <li>Founder of a global digital marketing agency.</li>
+                            <li>Specializes in SEO, social media, and digital advertising.</li>
+                            <li>Focuses on global business growth through marketing.</li>
+                            <li>Tailored solutions for clients across various industries.</li>
+                            <li>Expertise in driving digital transformation for businesses.</li>
+                        </ul>
+                        <h2>Business Transformation After Joining UAbility: Key Overhauls and Improvements</h2>
+                        <p class="underline" >Before joining UAbility, Rajul's business struggled with inconsistent growth and client retention. After implementing UAbility's strategies, he overhauled his marketing systems, offer positioning, and client fulfillment processes, leading to substantial business growth and more predictable revenue streams.</p>
+                        <h2>Scaling Revenue and Client Retention with Strategic Upgrades</h2>
+                        <p class="underline" >By upgrading his offer positioning, paid inbound marketing system, high-ticket closing methodology, and fulfillment process, Rajul increased client retention from 2 months to over a year. This allowed him to charge higher fees while keeping existing clients, eliminating the need for constant client acquisition.</p>
+                        <h2>Achieving $18,000–$20,000 Weekly Revenue and Overcoming Financial Hurdles</h2>
+                        <p>What once seemed like an impossible financial goal, making $18,000–$20,000 weekly, has become a consistent reality for Rajul. With the strategies from UAbility, he now effortlessly achieves these numbers, ensuring sustainable business growth and increased profitability.</p>
+                    </div>
+               
+
                 </div>
-                <div class="">
-                    <div class="">
-                        <h6>Key Achievement</h6>
+                <div class="right-box">
+                    <div class="rd-blue-box">
+                        <h6 class="font-16 m-font-12" >Key Achievement</h6>
                         <h4>Achieved consistent weekly revenue milestone of $18,000–$20,000 with strategic business improvements.</h4>
-                        <p>Rajul increased client retention from 2 months to over a year by optimizing services and processes.</p>
+                        <p class="font-20 m-font-13 color-white fw-300" >Rajul increased client retention from 2 months to over a year by optimizing services and processes.</p>
                     </div>
-                    <div class="">
+                    <div class="rd-form-box">
                         <h4>Get your free growth strategy today!</h4>
-                        <form action="">
+                        <form >
                             <input type="text" placeholder="Full Name*">
                             <input type="text" placeholder="Email address*">
                             <input type="text" placeholder="Mobile number*">
@@ -86,119 +174,167 @@
         </div>
     </section>
 
-    <section>
+    <section class="rd-browse-stories-section com-padding black-bg" >
         <div class="container">
-            <div class="">
+            <div class="rd-browse-stories-box">
                 <h2>Browse our related <strong>success stories.</strong></h2>
-                <ul>
+                <ul class="rd-browse-stories-listing rl-review-listing flex-box space-between" >
                     <li>
                         <div class="img-box">
-                            <img src="" alt="">
+                            <img src="img-2/rl-review-listing-img-1.webp" alt="">
                         </div>
-                        <h4>Omkar Bhutada</h4>
-                        <h6 class="" >Currecy Grow - Currency Grow</h6>
-                        <p class="" >SEBI Reg. Investment Advisor & Founder</p>
-                        <h6>Key Achievement</h6>
-                        <p class="" >From Rs 10 Lakhs/year to Rs 13.49 Lakhs in just 24-48 hours.</p>
+                        <div class="text-box">
+                            <h4 class="color-white font-32 m-font-20" >Omkar Bhutada</h4>
+                            <p class="color-blue font-18 uppercase m-font-12" >Currecy Grow - Currency Grow</p>
+                            <p class="font-20 m-font-13" >SEBI Reg. Investment Advisor & Founder</p>
+                            <p class="font-16 mt-5 uppercase m-font-12 color-blue" >Key Achievement</p>
+                            <p class="color-white font-20 m-font-14" >From Rs 10 Lakhs/year to Rs 13.49 Lakhs in just 24-48 hours.</p>
+                        </div>
                     </li>
                     <li>
                         <div class="img-box">
-                            <img src="" alt="">
+                            <img src="img-2/rl-review-listing-img-2.webp" alt="">
                         </div>
-                        <h4>Sumanth Makam</h4>
-                        <h6 class="" >National IAS Academy</h6>
-                        <p class="" >Managing Director</p>
-                        <h6>Key Achievement</h6>
-                        <p class="" >Helped 4 students crack upsc and transform 5,000 lives with his coaching</p>
+                        <div class="text-box">
+                            <h4 class="color-white font-32 m-font-20" >Sumanth Makam</h4>
+                            <p class="color-blue font-18 uppercase m-font-12" >National IAS Academy</p>
+                            <p class="font-20 m-font-13" >Managing Director</p>
+                            <p class="font-16 mt-5 uppercase m-font-12 color-blue" >Key Achievement</p>
+                            <p class="color-white font-20 m-font-14" >Helped 4 students crack upsc and transform 5,000 lives with his coaching</p>
+                        </div>
                     </li>
                     <li>
                         <div class="img-box">
-                            <img src="" alt="">
+                            <img src="img-2/rl-review-listing-img-3.webp" alt="">
                         </div>
-                        <h4>Vipul Rai</h4>
-                        <h6 class="" >ScaleAI</h6>
-                        <p class="" >Digital marketing specialist</p>
-                        <h6>Key Achievement</h6>
-                        <p class="" >Journey from network marketing struggles to ₹2L/month success.</p>
+                        <div class="text-box">
+                            <h4 class="color-white font-32 m-font-20" >Vipul Rai</h4>
+                            <p class="color-blue font-18 uppercase m-font-12" >ScaleAI</p>
+                            <p class="font-20 m-font-13" >Digital marketing specialist</p>
+                            <p class="font-16 mt-5 uppercase m-font-12 color-blue" >Key Achievement</p>
+                            <p class="color-white font-20 m-font-14" >A Journey from network marketing struggles to ₹2L/month success.</p>
+                        </div>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
 
-    
-    <section class="">
+    <section class="fw-who-is-section com-padding black-bg" >
         <div class="container">
-            <div class="">
-                <h2>Let’s explore our featured services</h2>
-                <ul class="">
-                    <li class="">
-                        <h3>UAbility Blue</h3>
-                        <p>Achieve your goals by transforming your approach to client acquisition. Engage with strategies tailored to your business needs for effective growth.</p>
-                        <a href="">Learn More</a>
-                    </li>
-                    <li class="">
-                        <h3>UAbility X Mastermind</h3>
-                        <p>Join an exclusive group of high-performing individuals to master advanced techniques and strategies for scaling your consulting business.</p>
-                        <a href="">Learn More</a>
-                    </li>
-                    <li class="">
-                        <h3>DFY Services</h3>
-                        <p>Scale your business with 2-3x growth using Done-For-You services designed to simplify client acquisition and increase efficiency.</p>
-                        <a href="">Learn More</a>
-                    </li>
-                </ul>
-                <div class="">
-                    <h3>4.86</h3>
-                    <div class="">
-                        <p>Rated on 245+ reviews</p>
-                        <img src="/img/" alt="">
+            <ul class="fw-who-is-listing flex-box rd-browse-stories">
+                <li>
+                    <h2>Browse Our <br>Blogs from the Categories</h2>
+                    <p class="font-20 m-font-14 ">Explore a wide range of categories to discover new topics, resources, and opportunities that suit your interests and needs.</p>
+                </li>
+                <li>
+                    <div class="img-box">
+                        <img src="img-2/rd-stories-1.webp" alt="">
                     </div>
-                    <div class="">
-                        <img src="/img/" alt="">
-                        <img src="/img/" alt="">
+                    <p class="font-25 m-font-13" >High Ticket Mindset</p>
+                    <a href="" class="color-blue font-22" >Explore More <span><img src="img-2/blue-arrow.png" alt=""></span></a>
+                </li>
+                <li>
+                    <div class="img-box">
+                        <img src="img-2/rd-stories-2.webp" alt="">
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container">
-            <ul class="">
-                <li>
-                    <h2>Browse Other
-                        Categories</h2>
-                    <p>Explore a wide range of categories to discover new topics, resources, and opportunities that suit your interests and needs.</p>
+                    <p class="font-25 m-font-13" >High Ticket Offers</p>
+                    <a href="" class="color-blue font-22" >Explore More <span><img src="img-2/blue-arrow.png" alt=""></span></a>
                 </li>
                 <li>
-                    <img src="" alt="">
-                    <h4>High Ticket Mindset</h4>
-                    <a href="">Explore More<span><img src="" alt=""></span></a>
+                    <div class="img-box">
+                        <img src="img-2/rd-stories-3.webp" alt="">
+                    </div>
+                    <p class="font-25 m-font-13" >High Ticket Lead Generation</p>
+                    <a href="" class="color-blue font-22" >Explore More <span><img src="img-2/blue-arrow.png" alt=""></span></a>
                 </li>
                 <li>
-                    <img src="" alt="">
-                    <h4>High Ticket Offers</h4>
-                    <a href="">Explore More<span><img src="" alt=""></span></a>
+                    <div class="img-box">
+                        <img src="img-2/rd-stories-4.webp" alt="">
+                    </div>
+                    <p class="font-25 m-font-13" >High Ticket Sales</p>
+                    <a href="" class="color-blue font-22" >Explore More <span><img src="img-2/blue-arrow.png" alt=""></span></a>
                 </li>
                 <li>
-                    <img src="" alt="">
-                    <h4>High Ticket Lead Generation</h4>
-                    <a href="">Explore More<span><img src="" alt=""></span></a>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <h4>High Ticket Sales</h4>
-                    <a href="">Explore More<span><img src="" alt=""></span></a>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <h4>High Ticket Conversion</h4>
-                    <a href="">Explore More<span><img src="" alt=""></span></a>
+                    <div class="img-box">
+                        <img src="img-2/rd-stories-5.webp" alt="">
+                    </div>
+                    <p class="font-25 m-font-13" >High Ticket Conversion</p>
+                    <a href="" class="color-blue font-22" >Explore More <span><img src="img-2/blue-arrow.png" alt=""></span></a>
                 </li>
             </ul>
         </div>
     </section>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        
+        // Get all play and fullscreen buttons
+        const videos = Array.from(document.getElementsByClassName("video__play-button"));
+        const videoFullscreenButtons = Array.from(document.getElementsByClassName("video__fullscreen-button"));
+        
+        // Loop through all videos
+        videos.forEach((videoButton) => {
+          videoButton.addEventListener("click", function() {
+        
+            const video = this.nextElementSibling;
+            const videoWrapper = this.parentElement;
+        
+            if (video.paused) {
+              // Play the video
+              video.play();
+              video.setAttribute('data-state', 'play');
+              video.setAttribute('data-state-reload', 'false');
+              videoWrapper.setAttribute('data-state', 'play');
+        
+              // Update button state
+              this.setAttribute('data-button-state', 'play');
+              this.setAttribute('data-button-state-reload', 'false');
+            } else {
+              // Pause the video
+              video.pause();
+              video.setAttribute('data-state', 'pause');
+              videoWrapper.setAttribute('data-state', 'pause');
+        
+              // Update button state
+              this.setAttribute('data-button-state', 'pause');
+            }
+        
+            // Handle video end event
+            video.onended = () => {
+              video.setAttribute('data-state', 'pause');
+              video.setAttribute('data-state-reload', 'true');
+        
+              // Update button state
+              this.setAttribute('data-button-state', 'pause');
+              this.setAttribute('data-button-state-reload', 'true');
+            };
+          });
+        });
+        
+        // Loop through all fullscreen buttons
+        videoFullscreenButtons.forEach((fullscreenButton) => {
+          fullscreenButton.addEventListener("click", function() {
+        
+            const video = this.nextElementSibling.nextElementSibling;
+        
+            if (video.requestFullscreen) {
+              video.requestFullscreen();
+            } else if (video.mozRequestFullScreen) { // Firefox
+              video.mozRequestFullScreen();
+            } else if (video.webkitRequestFullScreen) { // Chrome, Safari, Opera
+              video.webkitRequestFullScreen();
+            } else if (video.msRequestFullscreen) { // IE/Edge
+              video.msRequestFullscreen();
+            }
+          });
+        });
+        
+        });
+        
+    </script>
 
 
 </body>

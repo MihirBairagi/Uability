@@ -3,63 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Review Listing</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main-child.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.js"></script>
 </head>
 <body>
-    <section>
+    <header>
+        <div class="header">
+            <button class="drawer-btn" aria-label="Open Drawer">
+                <svg width="29" height="18" viewBox="0 0 29 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M11.5547 1.28299C11.5547 0.807408 11.9402 0.421875 12.4158 0.421875H28.138C28.6136 0.421875 28.9991 0.807408 28.9991 1.28299C28.9991 1.75856 28.6136 2.1441 28.138 2.1441H12.4158C11.9402 2.1441 11.5547 1.75856 11.5547 1.28299Z"
+                        fill="white" />
+                    <path
+                        d="M0 8.80252C0 8.32694 0.385532 7.94141 0.861111 7.94141H28.1389C28.6145 7.94141 29 8.32694 29 8.80252C29 9.2781 28.6145 9.66363 28.1389 9.66363H0.861111C0.385533 9.66363 0 9.2781 0 8.80252Z"
+                        fill="white" />
+                    <path
+                        d="M11.5547 16.3181C11.5547 15.8426 11.9402 15.457 12.4158 15.457H28.138C28.6136 15.457 28.9991 15.8426 28.9991 16.3181C28.9991 16.7937 28.6136 17.1793 28.138 17.1793H12.4158C11.9402 17.1793 11.5547 16.7937 11.5547 16.3181Z"
+                        fill="white" />
+                </svg>
+            </button>
+            <div class="logo"><a href="/"><img src="img/logo.png" alt=""></a></div>
+            <nav class="nav">
+                <div class="drawer">
+                    <button class="close-btn close_drawer" aria-label="Close Drawer">
+                        <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"
+                            aria-label="Close Drawer" role="img">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                            </path>
+                        </svg>
+                    </button>
+                    <ul class="nav-list flex">
+                        <li><a href="javascript:void(0)" class="close_drawer">Programmes</a></li>
+                        <li><a href="javascript:void(0)" class="close_drawer">Journey</a></li>
+                        <li><a href="javascript:void(0)" class="close_drawer">Reviews</a></li>
+                        <li><a href="javascript:void(0)" class="close_drawer">About Us</a></li>
+                        <li><a href="javascript:void(0)" class="close_drawer">Who is it for ?</a></li>
+                    </ul>
+                    <a href="javascript:void(0)" class="btn-arrow">Apply Now</a>
+                </div>
+                <div class="blank close_drawer"></div>
+            </nav>
+        </div>
+    </header>
+    <section class="banner-section review-listing-banner" style="background-image: url(img-2/review-detail-banner-img.webp);">
         <div class="container">
-            <div class="">
-                <p><a href="">home</a>> Reviews</p>
-                <h1>Read success stories<br> from our clients</h1>
+            <ul class="breadcrumb-grp">
+                <li><a href="/">Home</a></li>
+                <li><a href="javascript:void(0)">Reviews</a></li>
+                <li>Mastermind</li>
+            </ul>
+            <div class="heading-box">
+                <h1>
+                    Read success stories<br> from our clients
+                </h1>
                 <p>Explore inspiring success stories and testimonials from our clients<br> who achieved growth with UAbility’s support.</p>
             </div>
         </div>
     </section>
-    <section>
+    <section class="rl-review-listing-section com-padding black-bg" >
         <div class="container">
-            <div class="">
-                <div class="">
-                    <h5>Filters</h5>
+            <div class="rl-review-listing-box flex-box space-between">
+                <div class="rl-review-filter col-25 full-950">
                     <ul>
-                        <li><p>Uability Mastermind</p></li>
-                        <li><p>Uability Blue</p></li>
-                        <li><p>Done For You (DFY)</p></li>
-                        <li><p>Blue Wins</p></li>
+                        <h5 class="font-25 m-font-14" >Filters</h5>
+                        <li class="active" ><p class="font-16 m-font-12" > <span><img src="img-2/fw-li-tick.webp" alt=""></span> Uability Mastermind</p></li>
+                        <li><p class="font-16 m-font-12" > <span><img src="img-2/fw-li-tick.webp" alt=""></span> Uability Blue</p></li>
+                        <li><p class="font-16 m-font-12" > <span><img src="img-2/fw-li-tick.webp" alt=""></span> Done For You (DFY)</p></li>
+                        <li><p class="font-16 m-font-12" > <span><img src="img-2/fw-li-tick.webp" alt=""></span> Blue Wins</p></li>
                     </ul>
+                    <div class="meeting-box mt-5 mobile-none">
+                        <h3 class="font-45" >Schedule Meeting!</h3>
+                        <p class="font-20 color-white" >Ready to speak with our expert? give us a ring in 24x7.</p>
+                        <div class="founder-box flex-box">
+                            <div class="img-box">
+                                <img src="img-2/rl-founder-img.webp" alt="">
+                            </div>
+                            <div class="text-box">
+                                <h4 class="font-25 m-font-14" >Rohan Dhawan</h4>
+                                <p class="font-18" >Founder</p>
+                            </div>
+                        </div>
+                        <a class="btn" href="">Book your slot now</a>
+                    </div>
                 </div>
-                <ul>
+                <ul class="rl-review-listing col-7 flex-box space-between full-950" >
                     <li>
                         <div class="img-box">
-                            <img src="" alt="">
+                            <img src="img-2/rl-review-listing-img-1.webp" alt="">
                         </div>
-                        <h4>Omkar Bhutada</h4>
-                        <p class="" >Founder of Currecy Grow - Currency Grow</p>
-                        <p class="" >Key Achievement</p>
-                        <p class="" >From Rs 10 Lakhs/year to Rs 13.49 Lakhs in just 24-48 hours.</p>
+                        <div class="text-box">
+                            <h4 class="color-white font-32 m-font-20" >Omkar Bhutada</h4>
+                            <p class="color-white font-18 uppercase m-font-12" >Founder of Currecy Grow - Currency Grow</p>
+                            <p class="font-18 mt-5 uppercase m-font-12" >Key Achievement</p>
+                            <p class="color-white font-25 m-font-14" >From Rs 10 Lakhs/year to Rs 13.49 Lakhs in just 24-48 hours.</p>
+                        </div>
                     </li>
                     <li>
                         <div class="img-box">
-                            <img src="" alt="">
+                            <img src="img-2/rl-review-listing-img-2.webp" alt="">
                         </div>
-                        <h4>Sumanth Makam</h4>
-                        <p class="" >Managing Director At National IAS Academy</p>
-                        <p class="" >Key Achievement</p>
-                        <p class="" >Helped 4 students crack upsc and transform 5,000 lives with his coaching</p>
+                        <div class="text-box">
+                            <h4 class="color-white font-32 m-font-20" >Sumanth Makam</h4>
+                            <p class="color-white font-18 uppercase m-font-12" >Managing Director At National IAS Academy</p>
+                            <p class="font-18 mt-5 uppercase m-font-12" >Key Achievement</p>
+                            <p class="color-white font-25 m-font-14" >Helped 4 students crack upsc and transform 5,000 lives with his coaching</p>
+                        </div>
                     </li>
+                    <li>
+                        <div class="img-box">
+                            <img src="img-2/rl-review-listing-img-3.webp" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h4 class="color-white font-32 m-font-20" >Vipul Rai</h4>
+                            <p class="color-white font-18 uppercase m-font-12" >Digital marketing specialist At ScaleAI</p>
+                            <p class="font-18 mt-5 uppercase m-font-12" >Key Achievement</p>
+                            <p class="color-white font-25 m-font-14" >A Journey from network marketing struggles to ₹2L/month success.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-box">
+                            <img src="img-2/rl-review-listing-img-4.webp" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h4 class="color-white font-32 m-font-20" >Hitesh Chhatralia</h4>
+                            <p class="color-white font-18 uppercase m-font-12" >Corporate Trainer at Helpopedia EduTech LLP</p>
+                            <p class="font-18 mt-5 uppercase m-font-12" >Key Achievement</p>
+                            <p class="color-white font-25 m-font-14" >40K to 10X: how this trainer scaled his business with UAbility.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-box">
+                            <img src="img-2/rl-review-listing-img-5.webp" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h4 class="color-white font-32 m-font-20" >Swagatam Maji</h4>
+                            <p class="color-white font-18 uppercase m-font-12" >Customer Support Engineer at Instantly.ai</p>
+                            <p class="font-18 mt-5 uppercase m-font-12" >Key Achievement</p>
+                            <p class="color-white font-25 m-font-14" >Swagatam closed his first high ticket client for rs 2,42,000 within 17 days.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-box">
+                            <img src="img-2/rl-review-listing-img-6.webp" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h4 class="color-white font-32 m-font-20" >Rajul Rahul Raghuvanshi</h4>
+                            <p class="color-white font-18 uppercase m-font-12" >C.E.O Of RRR MEDIA GROUP.</p>
+                            <p class="font-18 mt-5 uppercase m-font-12" >Key Achievement</p>
+                            <p class="color-white font-25 m-font-14" >From Rs 10 Lakhs/year to Rs 13.49 Lakhs in just 24-48 hours.</p>
+                        </div>
+                    </li>
+                    <div class="btn-box">
+                        <a class="btn" href="">Load More</a>
+                    </div>
                 </ul>
+                <div class="meeting-box mt-5 desktop-none">
+                    <h3 class="font-45 m-font-25" >Schedule Meeting!</h3>
+                    <p class="font-20 color-white m-font-14" >Ready to speak with our expert? give us a ring in 24x7.</p>
+                    <div class="founder-box flex-box">
+                        <div class="img-box">
+                            <img src="img-2/rl-founder-img.webp" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h4 class="font-25 m-font-14" >Rohan Dhawan</h4>
+                            <p class="font-18 m-font-12" >Founder</p>
+                        </div>
+                    </div>
+                    <a class="btn" href="">Book your slot now</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section>
-        <div class="container">
-            <div class="">
-                <h6>Let’s</h6>
-                <h2>Meet the brain behind UAbility <br>and the team members.</h2>
-                <p>Get to know the founder of UAbility and the dedicated<br> team driving client success and growth.</p>
-                <a href="">Explore More</a>
-            </div>
-        </div>
-    </section>
+    <script>
+        document.querySelectorAll('.rl-review-filter li').forEach(li => {
+            li.addEventListener('click', function () {
+                this.classList.toggle('active');
+            });
+        });
+    </script>
+
 </body>
 </html>
